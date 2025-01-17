@@ -45,9 +45,50 @@ nav {
 /* Contact Button */
 input, textarea, button{
   font: inherit;
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  margin-block: 10px 20px;
-  writing-mode: horizontal-tb;
+  /* display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+  gap: 1em; */
+}
+
+label{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+  
+}
+
+button{
+  grid-column: 1 / -1;
+  gap: 1em;
+}
+
+/* Projects */
+
+.projects{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 2em;
+}
+
+article{
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 1em
+}
+
+h1{
+  font-size: 400%
+}
+
+h2{
+  /* grid-row: span 3; */
+  margin: 0;
+  text-wrap: balance;
+}
+
+h1, h2, h3, h4, h5, h6{
+  line-height: 1.1;
 }
