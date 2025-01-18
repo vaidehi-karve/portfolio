@@ -46,21 +46,21 @@ nav {
 /* Contact Button */
 input, textarea, button{
   font: inherit;
-  /* display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-columns: subgrid;
-  grid-column: 1 / -1;
-  gap: 1em; */
 }
 
-label{
+form{
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-columns: subgrid;
   grid-column: 1 / -1;
   
 }
 
+label{
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+  gap: 1em;
+}
 button{
   grid-column: 1 / -1;
   gap: 1em;
@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .headers{
-  margin-bottom: 0em;
+  margin-bottom: 0.1em;
 }
 
 section h3 {
