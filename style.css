@@ -5,7 +5,8 @@ body {
     max-width: 100ch;
     margin-inline: max(1em, (100% - 100ch) / 2);
     font: 100%/1.25 system-ui;
-    accent-color: var(--color-accent)
+    accent-color: var(--color-accent);
+    background-color: #f4f3f8; 
   }
 
   /* Navigation */
@@ -17,7 +18,7 @@ a {
   padding: 0.5em;
   }
   a:hover{
-    border-bottom-width: 1 px;
+  border-bottom-width: 1 px;
   border-bottom-style: solid;
   border-bottom-color: var(--color-accent);
   background-color: oklch(from var(--color-accent) 95% 5% h);
@@ -38,7 +39,7 @@ nav {
 }
 
 :root{
-  --color-accent:oklch(65% 50% 0);
+  --color-accent:oklch(70% 0.1 291);
 
 }
 
@@ -91,4 +92,35 @@ h2{
 
 h1, h2, h3, h4, h5, h6{
   line-height: 1.1;
+}
+
+.Education{
+  margin-top: 0.5em;
+}
+
+.section{
+  padding-top: 1em;
+}
+
+.headers{
+  margin-bottom: 0em;
+}
+
+section h3 {
+  margin-bottom:0.5em;
+}
+section h4 {
+  margin-top: -0.2em;
+  margin-bottom: 0em;
+}
+section h5 {
+  margin-top: 0.6em;
+  margin-bottom: 0.5em;
+}
+
+section li{
+  margin-top: 0.3em;
+  list-style-position: outside;
+  padding-left: 1.5em; /* Adjust for consistent alignment of text */
+  text-indent: -1.5em;
 }
