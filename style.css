@@ -132,5 +132,5 @@ section li{
   position: absolute;
   top: 1rem;
   right: 1rem;
-  font: 80% inh-ui;
+  font: 80% inherit;
 }
