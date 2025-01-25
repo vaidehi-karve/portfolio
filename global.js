@@ -13,9 +13,9 @@ function $$(selector, context = document) {
 let pages = [
     { url: '', title: 'Home' },
     { url: 'https://github.com/vaidehi-karve', title: 'Github' },
-    { url: 'projects/', title: 'Projects' },
-    { url: 'resume/', title: 'Resume' },
-    { url: 'contact/', title: 'Contact' },
+    { url: './projects/', title: 'Projects' },
+    { url: './resume/', title: 'Resume' },
+    { url: './contact/', title: 'Contact' },
   ];
 
 let nav = document.createElement('nav');
