@@ -134,3 +134,36 @@ section li{
   right: 1rem;
   font: 80% inherit;
 }
+
+/* github */
+
+/* #dropdown-menu {
+
+} */
+
+#profile-stats {
+  /* margin: 1rem auto; */
+  padding: 1rem;
+  max-width: 600px;
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+  border: 1px solid var(--color-accent);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal-sized columns */
+  gap: 1rem; /* Adjust spacing between items */
+  text-align: center; /* Optional: Align text in the center */
+}
+
+#profile-stats dt {
+  grid-row: 1; /* Place all <dt> elements in the first row */
+  font-weight: bold; /* Make the labels stand out */
+}
+
+#profile-stats dd {
+  grid-row: 2; /* Place all <dd> elements in the second row */
+  margin: 0; /* Remove default margins */
+}

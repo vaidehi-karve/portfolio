@@ -69,3 +69,46 @@ if ("colorScheme" in localStorage) {
     document.documentElement.style.setProperty('color-scheme', localStorage.getItem('colorScheme'));
     select.value = localStorage.getItem('colorScheme');
 }
+
+// LAB 3 ends
+// ----------------------------------------------------------------------------------------
+// Lab 4 starts
+console.log('is this working please help');
+export async function fetchJSON(url) {
+  console.log('fetchJSON is running');
+  try {
+      // Fetch the JSON file from the given URL
+      const response = await fetch(url);
+      console.log(response);
+      if (!response.ok) {
+        throw new Error(`Failed to fetch projects: ${response.statusText}`);
+    }
+    const data = await response.json();
+    console.log("second message");
+    return data;
+
+  } catch (error) {
+      console.error('Error fetching or parsing JSON data:', error);
+  } 
+}
+
+export function renderProjects(project, containerElement, headingLevel = 'h2') {
+  // Your code will go here
+  containerElement.innerHTML = '';
+  for (var proj of project) {
+    console.log(proj)
+    const article = document.createElement('article');
+    article.innerHTML = `
+    <h3>${proj.title}</h3>
+    <img src="${proj.image}" alt="${proj.title}">
+    <p>${proj.description}</p>
+    `;
+    containerElement.appendChild(article);
+  }
+}
+
+export async function fetchGitHubData(username) {
+  // return statement here
+  console.log("test for githubss")
+  return fetchJSON(`https://api.github.com/users/${username}`);
+}
