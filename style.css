@@ -167,3 +167,12 @@ section li{
   grid-row: 2; /* Place all <dd> elements in the second row */
   margin: 0; /* Remove default margins */
 }
+
+/* trying to change project images */
+.projects img {
+  width: 150px; /* Adjust the size */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Optional for cropping */
+  border-radius: 10px; /* Optional */
+  margin-bottom: 10px; /* Optional spacing */
+}

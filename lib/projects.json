@@ -1,18 +1,21 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ducimus similique laboriosam numquam natus voluptatibus, deserunt blanditiis dolore illo id ex vel. Architecto ullam voluptate, distinctio quia impedit aperiam omnis."
+        "title": "Sea Level Anomaly Prediction",
+        "year": "2025",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/NSF_Official_logo_Med_Res.png",
+        "description": "Extracted key sea level anomaly (SLA) metrics from 20 years of tide gauge data (7,300+ files) for 12 East Coast stations. Developed a Random Forest Classifier achieving 97.7% test accuracy, predicting 10 years of future anomalies to improve coastal flood preparedness and proactive resource allocation."
     },
     {
-        "title": "Unde repudiandae officiis voluptate?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Voluptate modi nemo, alias animi reprehenderit in est totam libero, expedita quod vitae obcaecati ad. Numquam delectus esse, ipsa, ea maxime excepturi, illo explicabo animi quae praesentium vel deleniti magni."
+        "title": "U.S. Power Outage Analysis",
+        "year": "2024",
+        "image": "https://images.emojiterra.com/google/android-12l/512px/1f4a1.png",
+        "description": "Analyzed 1,534 power outages over 15+ years, uncovering trends in weather, population density, and state-level factors. Improved outage duration prediction by 25% through feature engineering, data preprocessing, ML models, and fairness analysis."
     },
     {
-        "title": "Quidem fuga placeat optio.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Libero dicta nisi reiciendis sunt molestias quae sint, iste, tenetur consequatur facilis maiores, quaerat deserunt. Animi quasi vitae soluta nemo odit voluptates. Minus maxime ipsam nisi explicabo, sunt impedit est."
+        "title": "SharpKids",
+        "year": "2024",
+        "image": "https://avatars.sched.co/3/94/4952676/avatar.jpg?ea3",
+        "description": "Designed SharpKids, a working Figma prototype app, integrating into Sharp HealthCare’s ecosystem across California. Personalized live healthcare recommendations for children via ArcGIS geospatial tracking and data monetization strategies. Won 2nd Place out of  60+ Teams and 200+ Participants at Big Data Hackathon 2024 at SDSU."
     },
     {
         "title": "Doloremque dolorum necessitatibus adipisci.",
