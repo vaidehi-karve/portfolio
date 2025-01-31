@@ -73,7 +73,6 @@ if ("colorScheme" in localStorage) {
 // LAB 3 ends
 // ----------------------------------------------------------------------------------------
 // Lab 4 starts
-console.log('is this working please help');
 export async function fetchJSON(url) {
   console.log('fetchJSON is running');
   try {

@@ -1,7 +1,8 @@
 console.log("testing testing testing")
-import { fetchJSON, renderProjects } from '../global.js';
+import { fetchJSON, renderProjects, fetchGitHubData } from '../global.js';
 const projects = await fetchJSON('../lib/projects.json');
 const latestProjects = projects.slice(0, 3);
+
 const projectsContainer = document.querySelector('.projects');
 renderProjects(latestProjects, projectsContainer, 'h2');
 
@@ -21,13 +22,3 @@ if (profileStats) {
       `;
   }
   
-async function fetchGitHubData(username) {
-  try {
-    const response = await fetch(`https://api.github.com/users/${username}`);
-    if (!response.ok) throw new Error('Failed to fetch GitHub data');
-    return await response.json();
-  } catch (error) {
-    console.error(error);
-    return null;
-  }
-}
