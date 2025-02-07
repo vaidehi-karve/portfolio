@@ -176,3 +176,62 @@ section li{
   border-radius: 10px; /* Optional */
   margin-bottom: 10px; /* Optional spacing */
 }
+
+/* Lab 5 */
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+
+/* .legend{
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  display: inline-block;
+} */
+
+/* Style for the swatch */
+.swatch {
+  width: 1rem; /* Set the swatch width */
+  height: 1rem; /* Set the swatch height */
+  aspect-ratio: 1 / 1; /* Ensure it remains a square */
+  background-color: var(--color); /* Use the custom color variable */
+  border-radius: 50%; /* Make it a circle */
+  display: inline-block; /* Ensure width/height works */
+}
+
+
+/* Style for the legend container */
+.legend {
+  display: grid; /* Use a grid layout for responsive behavior */
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr)); /* Auto-fit columns */
+  gap: 1rem; /* Spacing between items */
+  border: 1px solid #ccc; /* Add a border to the legend */
+  padding: 1rem; /* Spacing inside the legend */
+  margin: 1rem; /* Spacing outside the legend */
+  list-style: none; /* Remove default bullet points */
+  flex: 1;
+}
+
+/* Style for each legend item */
+.legend li {
+  display: flex; /* Align swatch and text horizontally */
+  align-items: center; /* Center align swatch and text vertically */
+  gap: 0.5rem; /* Spacing between swatch and text */
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+svg:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+path {
+  transition: 300ms;
+}
