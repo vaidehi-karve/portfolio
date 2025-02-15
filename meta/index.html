@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta</title>
+    <h1 class = "headers"> Meta</h1>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../global.js" type="module"></script>
+    <script src="./main.js" type="module"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <p>Statistics about this website:</p>
+    <div id="stats"></div> <br>
+
+    <h2>Commits by time of day</h2> <br>
+    <div id="chart"></div>
+
+    <dl id="commit-tooltip" class="info tooltip">
+        <dt>Commit</dt>
+        <dd>
+          <a href="" id="commit-link" target="_blank"></a>
+        </dd>
+      
+        <dt>Date</dt>
+        <dd id="commit-date"></dd>
+      
+        <!-- Add: Time, author, lines edited -->
+      </dl>
+
+      <p id="selection-count">No commits selected yet. Hover over or click some to learn more!</p>
+      <dl id="language-breakdown" class="stats"></dl>
+
+      
+
+
+
+</body>
+</html>

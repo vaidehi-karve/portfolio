@@ -235,3 +235,154 @@ svg:has(path:hover) {
 path {
   transition: 300ms;
 }
+
+
+/* lab 7 */
+#stats {
+  /* margin: 1rem auto; */
+  padding: 1rem;
+  max-width: 1000px;
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+  border: 1px solid var(--color-accent);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+#stats dl {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* Four equal-sized columns */
+  gap: 1rem; /* Adjust spacing between items */
+  text-align: center; /* Optional: Align text in the center */
+}
+
+
+#stats dt {
+  grid-row: 1; /* Place all <dt> elements in the first row */
+  font-weight: bold; /* Make the labels stand out */
+}
+
+#stats dd {
+  grid-row: 2; /* Place all <dd> elements in the second row */
+  margin: 0; /* Remove default margins */
+}
+
+
+.gridlines line {
+  stroke: #ccc;
+  stroke-opacity: 0.5;
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+  fill: oklch(70% 0.1 291);
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5em 1em;
+  margin: 0;
+  padding: 0.5em;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+dl.info dt {
+  font-weight: bold;
+  color: #555;
+}
+
+dl.info dd {
+  margin: 0;
+  color: #222;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  /* padding: 0.5em 1em; */
+  /* border-radius: 5px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8; /* 5 + 3 */
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+circle.selected {
+  fill: #8926f3;
+}
+/* language breakdown */
+#language-breakdown {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.8;
+  max-width: 450px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #f9f9f9; /* Light, modern background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#language-breakdown dt {
+  font-weight: 600;
+  color: #222;
+  margin-top: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+#language-breakdown dd {
+  margin-left: 0;
+  font-size: 15px;
+  color: #555;
+  padding: 4px 0;
+}
+
+#language-breakdown dd:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 6px;
+}
+
+#language-breakdown dd::before {
+  content: "•"; /* Bullet point */
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+  width: 14px;
+  margin-right: 6px;
+}

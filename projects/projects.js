@@ -8,7 +8,7 @@ renderProjects(projects, projectsContainer, 'h2');
 // projectCountElement.textContent = `Projects (${projects.length})`;
 
 // // Lab 5
-let colors = d3.scaleOrdinal(d3.schemeTableau10);
+let colors = d3.scaleOrdinal(d3.schemeObservable10);
 let selectedIndex = -1;
 
 
