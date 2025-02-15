@@ -136,7 +136,7 @@ function createScatterplot(){
     d3.select(event.currentTarget).style('fill-opacity', 1);  // Full opacity on hover
     updateTooltipContent(d);                  // Update tooltip
     updateTooltipVisibility(true);           // Make tooltip visible
-    // brushSelector();
+    brushSelector();
   })
   .on('mouseleave', function (event) {
     d3.select(event.currentTarget).style('fill-opacity', 0.7);  // Restore opacity
